@@ -10,7 +10,6 @@ ai.api_key = st.secrets["API_KEY"]
 
 st.title("COVER LETTER GENERATOR")
 st.sidebar.markdown("# MODEL SELECTION")
-
 with st.sidebar: 
     model_used = st.selectbox(
      'GPT-3 Model',
