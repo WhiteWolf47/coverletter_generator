@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 st.set_page_config(layout="wide")
 load_dotenv()
 print("** Loading API Key")
+st.write("API KEY:", st.secrets["API_KEY"])
 ai.api_key = st.secrets["API_KEY"]
 
 st.title("COVER LETTER GENERATOR")
