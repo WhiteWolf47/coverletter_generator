@@ -8,9 +8,8 @@ load_dotenv()
 print("** Loading API Key")
 ai.api_key = st.secrets["API_KEY"]
 
-st.title("Amber's Guide To Job Apps")
-st.markdown("# Cover Letter Generator 🎈")
-st.sidebar.markdown("# Cover Letter Generator  🎈")
+st.title("Cover Letter Generator")
+st.sidebar.markdown("# Cover Letter Generator")
 
 with st.sidebar: 
     model_used = st.selectbox(
