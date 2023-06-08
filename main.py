@@ -3,7 +3,7 @@ import json
 import streamlit as st 
 import os
 from dotenv import load_dotenv
-
+st.set_page_config(layout="wide")
 load_dotenv()
 print("** Loading API Key")
 ai.api_key = st.secrets["API_KEY"]
