@@ -11,12 +11,7 @@ ai.api_key = st.secrets["API_KEY"]
 st.title("COVER LETTER GENERATOR")
 st.sidebar.markdown("# MODEL SELECTION")
 with st.sidebar: 
-    model_used = st.selectbox(
-     'GPT-3 Model',
-    #  ('DaVinci', 'Curie', 'Babbage', 'Ada'))
-    ('text-davinci-002', 'text-curie-001', 'text-babbage-001', 'text-ada-001'))
-
-
+    model_used = st.selectbox('GPT-3 Model',('text-davinci-002', 'text-curie-001', 'text-babbage-001', 'text-ada-001'))
     if model_used == 'text-davinci-002': 
         st.markdown("""# [Davinci](https://beta.openai.com/docs/models/davinci)""")
         # st.markdown("""
