@@ -35,7 +35,7 @@ with st.sidebar:
     temperature = st.text_input("Temperature: ", "0.99")
     top_p = st.text_input("Top P: ", "1")
 
-
+st.markdown("# PLEASE FILL OUT THE FOLLOWING INFORMATION")
 with st.form(key='my_form_to_submit'):    
     company_name = st.text_input("Company Name: ", "Google")
     role = st.text_input("What role are you applying for? ", "Machine Learning Engineer")
